@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@700&display=swap');
+
+*, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #d5e1ef;
+}
+
+.qr_code{
+    width: 100%;
+    height: 90vh;
+    padding: 0 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr_code .qr_code-content{
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.qr_code-content .qr_code-content-img{
+    overflow-x: hidden;
+    border-radius: 1rem;
+}
+.qr_code-content .qr_code-content-img img{
+    width: 100%;
+}
+
+.qr_code-content .qr_code-content-text{
+    padding: 1rem;
+    text-align: center;
+}
+
+.qr_code-content-text h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    margin: .7rem 0;
+    color: #283654;
+}
+
+.qr_code-content-text p{
+    font-size: .9rem;
+    line-height: 1.4;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #6a768f;
+}
+
+@media screen and (min-width: 470px) {
+    .qr_code-content{
+        max-width: 410px;
+        width: 100%;
+    }
+}
+@media screen and (min-width: 900px) {
+    .qr_code-content{
+        max-width: 320px;
+        width: 100%;
+    }
+}
